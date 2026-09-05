@@ -2,11 +2,11 @@
 
 A deep learning project for **automated multi-label chest X-ray disease classification** using transfer learning on the NIH ChestX-ray14 dataset.
 
-## 📊 Project Overview
+##  Project Overview
 
 This repository implements a CheXNet-inspired model for detecting **14 thoracic diseases** from chest X-ray images. The project demonstrates transfer learning techniques, multi-label classification, and proper handling of class imbalance - key skills for computer vision roles.
 
-## 🎯 Problem & Impact
+##  Problem & Impact
 
 **Challenge:** Automated detection of chest abnormalities to assist radiologists in early diagnosis.
 
@@ -16,7 +16,7 @@ This repository implements a CheXNet-inspired model for detecting **14 thoracic 
 
 **My Contribution:** Reproduced and extended the CheXNet architecture with enhanced training pipeline, uncertainty estimation, and test-time augmentation.
 
-## 🏗️ Model Architecture
+##  Model Architecture
 
 | Component | Details |
 |-----------|---------|
@@ -25,7 +25,7 @@ This repository implements a CheXNet-inspired model for detecting **14 thoracic 
 | **Output** | Sigmoid-activated logits per disease class |
 | **Regularization** | Dropout, Weight Decay (1e-5) |
 
-## 📈 Key Results
+##  Key Results
 
 | Metric | Score | Baseline (Paper) |
 |--------|-------|------------------|
@@ -35,7 +35,7 @@ This repository implements a CheXNet-inspired model for detecting **14 thoracic 
 
 *Training for 20 epochs with early stopping; results improved to 0.8000 AUROC with extended training.*
 
-## 🔬 Methodology
+##  Methodology
 
 ### Transfer Learning
 - DenseNet121 initialized with ImageNet pretrained weights
@@ -57,7 +57,7 @@ This repository implements a CheXNet-inspired model for detecting **14 thoracic 
 - **Secondary:** F1-score (Pneumonia at optimal threshold)
 - **Reliability:** Bootstrap 95% Confidence Intervals
 
-## 📁 Project Structure
+##  Project Structure
 
 ```text
 chexnet/
@@ -79,7 +79,7 @@ chexnet/
 └── runs/                  # Experiment logs & checkpoints
 ```
 
-## 🚀 Quick Start
+##  Quick Start
 
 ```bash
 # Install dependencies
@@ -114,7 +114,7 @@ python - from chexnet.visualize import visualize_prediction
 visualize_prediction(model, "/path/to/xray.jpg")
 ```
 
-## 📦 Dependencies
+##  Dependencies
 
 See `requirements.txt` for full list. Key packages:
 - **PyTorch** - Deep learning framework
@@ -124,7 +124,7 @@ See `requirements.txt` for full list. Key packages:
 - **Pillow** - Image handling
 - **iterstrat** - Multilabel stratified splitting
 
-## 👤 About Me
+##  About Me
 
 This project was developed as part of my computer vision portfolio demonstrating:
 - Transfer learning and fine-tuning skills (DenseNet121 + ImageNet weights)
@@ -137,7 +137,7 @@ This project was developed as part of my computer vision portfolio demonstrating
 
 Results can be further improved with extended training (50+ epochs) and hyperparameter optimization - typical for real-world CV projects where compute/resources are constrained.
 
-## 🔧 Future Improvements
+##  Future Improvements
 
 - Longer training schedule (50+ epochs with cosine annealing)
 - Hyperparameter tuning (learning rate, batch size, augmentation)
